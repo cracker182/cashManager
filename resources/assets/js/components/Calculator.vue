@@ -10,71 +10,271 @@
             <div class="box">
                 <div class="columns">
                     <div class="column">
-                        <b-field grouped>
-                            <p class="control" style="width: 60px">
+                        <b-field grouped="true">
+                            <p class="control">
                                 <button class="button">100er</button>
                             </p>
-                            <b-input type="number" v-model="hundred"></b-input>
+                            <b-input type="tel" expanded="true" v-model="hundred"></b-input>
                             <p class="control">
-                                <button class="button is-warning" @click="hundred--"><i class="fa fa-minus"></i></button>
+                                <button class="button is-warning" @click="hundred--">
+                                    <b-icon icon="remove"></b-icon>
+                                </button>
                             </p>
                             <p class="control">
-                                <button class="button is-success" @click="hundred++"><i class="fa fa-plus"></i></button>
+                                <button class="button is-success" @click="hundred++">
+                                    <b-icon icon="add"></b-icon>
+                                </button>
                             </p>
                         </b-field>
                     </div>
                 </div>
                 <div class="columns">
                     <div class="column">
-                        <b-field grouped>
-                            <p class="control" style="width: 60px;">
+                        <b-field grouped="true" >
+                            <p class="control">
                                 <button class="button">50er</button>
                             </p>
-                            <b-input type="number" v-model="fifty"></b-input>
+                            <b-input type="tel" expanded="true" v-model="fifty"></b-input>
                             <p class="control">
-                                <button class="button is-warning" @click="fifty--"><i class="fa fa-minus"></i></button>
+                                <button class="button is-warning" @click="fifty--">
+                                    <b-icon icon="remove"></b-icon>
+                                </button>
                             </p>
                             <p class="control">
-                                <button class="button is-success" @click="fifty++"><i class="fa fa-plus"></i></button>
+                                <button class="button is-success" @click="fifty++">
+                                    <b-icon icon="add"></b-icon>
+                                </button>
+                            </p>
+                        </b-field>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column">
+                        <b-field grouped="true" >
+                            <p class="control">
+                                <button class="button">20er</button>
+                            </p>
+                            <b-input type="tel" expanded="true" v-model="twenty"></b-input>
+                            <p class="control">
+                                <button class="button is-warning" @click="twenty--">
+                                    <b-icon icon="remove"></b-icon>
+                                </button>
+                            </p>
+                            <p class="control">
+                                <button class="button is-success" @click="twenty++">
+                                    <b-icon icon="add"></b-icon>
+                                </button>
                             </p>
                         </b-field>
                     </div>
                 </div>
 
+                <div class="columns">
+                    <div class="column">
+                        <b-field grouped="true" >
+                            <p class="control">
+                                <button class="button">10er</button>
+                            </p>
+                            <b-input type="tel" expanded="true" v-model="ten"></b-input>
+                            <p class="control">
+                                <button class="button is-warning" @click="ten--">
+                                    <b-icon icon="remove"></b-icon>
+                                </button>
+                            </p>
+                            <p class="control">
+                                <button class="button is-success" @click="ten++">
+                                    <b-icon icon="add"></b-icon>
+                                </button>
+                            </p>
+                        </b-field>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column">
+                        <b-field grouped="true" >
+                            <p class="control">
+                                <button class="button">5er</button>
+                            </p>
+                            <b-input type="tel" expanded="true" v-model="five"></b-input>
+                            <p class="control">
+                                <button class="button is-warning" @click="five--">
+                                    <b-icon icon="remove"></b-icon>
+                                </button>
+                            </p>
+                            <p class="control">
+                                <button class="button is-success" @click="five++">
+                                    <b-icon icon="add"></b-icon>
+                                </button>
+                            </p>
+                        </b-field>
+                    </div>
+                </div>
 
-                <b-field label="20er">
-                    <b-input type="tel" v-model="twenty"></b-input>
-                </b-field>
-                <b-field label="10er">
-                    <b-input type="tel" v-model="ten"></b-input>
-                </b-field>
-                <b-field label="5er">
-                    <b-input type="tel" v-model="five"></b-input>
-                </b-field>
-                <b-field label="2€">
-                    <b-input type="tel" v-model="two"></b-input>
-                </b-field>
-                <b-field label="1€">
-                    <b-input type="tel" v-model="one"></b-input>
-                </b-field>
-                <b-field label="0,50€">
-                    <b-input type="tel" v-model="fiftycent"></b-input>
-                </b-field>
-                <b-field label="0,20€">
-                    <b-input type="tel" v-model="twentycent"></b-input>
-                </b-field>
-                <b-field label="0,10€">
-                    <b-input type="tel" v-model="tencent"></b-input>
-                </b-field>
-                <b-field label="0,05€">
-                    <b-input type="tel" v-model="fivecent"></b-input>
-                </b-field>
-                <b-field label="0,02€">
-                    <b-input type="tel" v-model="twocent"></b-input>
-                </b-field>
-                <b-field label="0,01€">
-                    <b-input type="tel" v-model="onecent"></b-input>
-                </b-field>
+                <div class="columns">
+                    <div class="column">
+                        <b-field grouped="true" >
+                            <p class="control">
+                                <button class="button">2er</button>
+                            </p>
+                            <b-input type="tel" expanded="true" v-model="two"></b-input>
+                            <p class="control">
+                                <button class="button is-warning" @click="two--">
+                                    <b-icon icon="remove"></b-icon>
+                                </button>
+                            </p>
+                            <p class="control">
+                                <button class="button is-success" @click="two++">
+                                    <b-icon icon="add"></b-icon>
+                                </button>
+                            </p>
+                        </b-field>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column">
+                        <b-field grouped="true" >
+                            <p class="control">
+                                <button class="button">1er</button>
+                            </p>
+                            <b-input type="tel" expanded="true" v-model="one"></b-input>
+                            <p class="control">
+                                <button class="button is-warning" @click="one--">
+                                    <b-icon icon="remove"></b-icon>
+                                </button>
+                            </p>
+                            <p class="control">
+                                <button class="button is-success" @click="one++">
+                                    <b-icon icon="add"></b-icon>
+                                </button>
+                            </p>
+                        </b-field>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column">
+                        <b-field grouped="true" >
+                            <p class="control">
+                                <button class="button">0,50er</button>
+                            </p>
+                            <b-input type="tel" expanded="true" v-model="fiftycent"></b-input>
+                            <p class="control">
+                                <button class="button is-warning" @click="fiftycent--">
+                                    <b-icon icon="remove"></b-icon>
+                                </button>
+                            </p>
+                            <p class="control">
+                                <button class="button is-success" @click="fiftycent++">
+                                    <b-icon icon="add"></b-icon>
+                                </button>
+                            </p>
+                        </b-field>
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div class="column">
+                        <b-field grouped="true" >
+                            <p class="control">
+                                <button class="button">0,20er</button>
+                            </p>
+                            <b-input type="tel" expanded="true" v-model="twentycent"></b-input>
+                            <p class="control">
+                                <button class="button is-warning" @click="twentycent--">
+                                    <b-icon icon="remove"></b-icon>
+                                </button>
+                            </p>
+                            <p class="control">
+                                <button class="button is-success" @click="twentycent++">
+                                    <b-icon icon="add"></b-icon>
+                                </button>
+                            </p>
+                        </b-field>
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div class="column">
+                        <b-field grouped="true" >
+                            <p class="control">
+                                <button class="button">0,10er</button>
+                            </p>
+                            <b-input type="tel" expanded="true" v-model="tencent"></b-input>
+                            <p class="control">
+                                <button class="button is-warning" @click="tencent--">
+                                    <b-icon icon="remove"></b-icon>
+                                </button>
+                            </p>
+                            <p class="control">
+                                <button class="button is-success" @click="tencent++">
+                                    <b-icon icon="add"></b-icon>
+                                </button>
+                            </p>
+                        </b-field>
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div class="column">
+                        <b-field grouped="true" >
+                            <p class="control">
+                                <button class="button">0,05er</button>
+                            </p>
+                            <b-input type="tel" expanded="true" v-model="fivecent"></b-input>
+                            <p class="control">
+                                <button class="button is-warning" @click="fivecent--">
+                                    <b-icon icon="remove"></b-icon>
+                                </button>
+                            </p>
+                            <p class="control">
+                                <button class="button is-success" @click="fivecent++">
+                                    <b-icon icon="add"></b-icon>
+                                </button>
+                            </p>
+                        </b-field>
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div class="column">
+                        <b-field grouped="true" >
+                            <p class="control">
+                                <button class="button">0,02er</button>
+                            </p>
+                            <b-input type="tel" expanded="true" v-model="twocent"></b-input>
+                            <p class="control">
+                                <button class="button is-warning" @click="twocent--">
+                                    <b-icon icon="remove"></b-icon>
+                                </button>
+                            </p>
+                            <p class="control">
+                                <button class="button is-success" @click="twocent++">
+                                    <b-icon icon="add"></b-icon>
+                                </button>
+                            </p>
+                        </b-field>
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div class="column">
+                        <b-field grouped="true" >
+                            <p class="control">
+                                <button class="button">0,01er</button>
+                            </p>
+                            <b-input type="tel" expanded="true" v-model="onecent"></b-input>
+                            <p class="control">
+                                <button class="button is-warning" @click="onecent--">
+                                    <b-icon icon="remove"></b-icon>
+                                </button>
+                            </p>
+                            <p class="control">
+                                <button class="button is-success" @click="onecent++">
+                                    <b-icon icon="add"></b-icon>
+                                </button>
+                            </p>
+                        </b-field>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -118,7 +318,6 @@
                     (this.fivecent * 0.05) +
                     (this.twocent * 0.02) +
                     (this.onecent * 0.01)
-
 
 
             }
