@@ -3,7 +3,7 @@
         <div class="nav-left">
             <a class="nav-item">
                 <i class="fa fa-money"></i> &nbsp;
-                <h4>Cash Manager</h4>
+                <h4>Kassenbestand: {{ cashamount }}</h4>
             </a>
         </div>
 
@@ -56,6 +56,8 @@
 <script>
     export default {
 
+        props: ['cashamount'],
+
         data () {
             return {
                 isClicked: false
@@ -77,3 +79,7 @@
         }
     }
 </script>
+
+<style>
+    .nav { position: fixed !important; top: 0; width: 100%; left: 0; right: 0;}
+</style>
