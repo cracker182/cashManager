@@ -8,12 +8,40 @@
         </div>
         <div class="column">
             <div class="box">
-                <b-field label="100er">
-                    <b-input type="tel" v-model="hundred"></b-input>
-                </b-field>
-                <b-field label="50er">
-                    <b-input type="tel" v-model="fifty"></b-input>
-                </b-field>
+                <div class="columns">
+                    <div class="column">
+                        <b-field grouped>
+                            <p class="control" style="width: 60px">
+                                <button class="button">100er</button>
+                            </p>
+                            <b-input type="number" v-model="hundred"></b-input>
+                            <p class="control">
+                                <button class="button is-warning" @click="hundred--"><i class="fa fa-minus"></i></button>
+                            </p>
+                            <p class="control">
+                                <button class="button is-success" @click="hundred++"><i class="fa fa-plus"></i></button>
+                            </p>
+                        </b-field>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column">
+                        <b-field grouped>
+                            <p class="control" style="width: 60px;">
+                                <button class="button">50er</button>
+                            </p>
+                            <b-input type="number" v-model="fifty"></b-input>
+                            <p class="control">
+                                <button class="button is-warning" @click="fifty--"><i class="fa fa-minus"></i></button>
+                            </p>
+                            <p class="control">
+                                <button class="button is-success" @click="fifty++"><i class="fa fa-plus"></i></button>
+                            </p>
+                        </b-field>
+                    </div>
+                </div>
+
+
                 <b-field label="20er">
                     <b-input type="tel" v-model="twenty"></b-input>
                 </b-field>
